@@ -1,0 +1,13 @@
+tasks.create(name: 'hello4') << {
+	println 'hello4'
+}
+
+task hello5(dependsOn: hello4) << {
+	println 'hello5'
+}
+
+task hello6 << {
+	println 'hello6'
+}
+
+hello6.dependsOn hello5

@@ -1,0 +1,12 @@
+
+task taskA << {
+
+	println "this is task A"
+}
+
+task taskB << {
+	
+	println "this is task B"
+}
+
+taskA.dependsOn taskB 

@@ -1,0 +1,19 @@
+task showDescription1 << {
+	description = 'this is task showDescription1'
+	println description
+}
+
+
+
+task showDescription2 << {
+	println description
+}
+showDescription2.description = 'this is task showDescription2'
+
+
+task showDescription3 << {
+	println description
+}
+showDescription3{
+	description = 'this is task showDescription3'
+}

@@ -1,0 +1,23 @@
+buildscript{
+
+	repositories{
+		maven{
+			url 'file:../lib'
+		}
+	}
+	
+	dependencies{
+		classpath 'wyk:dateAndTimePlugin:1.0'
+		//classpath group: 'wyk', name: 'dateAndTimePlugin', version: '1.0'
+	}
+}
+
+//apply plugin: wyk.DateAndTimePlugin
+apply plugin: 'time'
+
+
+dateAndTime{
+
+	timeFormat = 'HH:mm:ss.SSS'
+	//dateFormat = 'MM/dd/yyyy'
+}

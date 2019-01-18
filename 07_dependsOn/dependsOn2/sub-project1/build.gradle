@@ -1,0 +1,13 @@
+
+
+task taskA << {
+	println 'this is task A'
+}
+
+task taskB << {
+	println 'this is task B'
+}
+
+//taskA.dependsOn taskB
+taskA.dependsOn ':sub-project2:taskC'
+taskB.dependsOn ':sub-project2:taskD'

@@ -1,0 +1,27 @@
+class Child{
+	private String name
+}
+
+class Parent{
+	Child child = new Child()
+	String name = 'parent'
+	//Note
+	void configChild11(Closure c){
+		c.delegate = child
+		//c.setResolveStrategy Closure.DELEGATE_FIRST
+		c()
+		
+	}
+}
+
+def parent = new Parent()
+parent.configChild11{
+	name = 'Child name'
+}
+
+task groovyDelegate << {
+	
+	//println 'hello'
+	println parent.child.name
+	//println parent.name
+}

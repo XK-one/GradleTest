@@ -1,0 +1,21 @@
+buildscript{
+	repositories{
+		maven{
+			url 'file:../lib'
+		}
+	}
+	
+	//dependencies{
+	//	classpath group: 'wyk', name: 'hellotask', version: '1.0'
+	//}
+	dependencies{
+		classpath 'wyk:hellotask:1.0'
+	}
+}
+
+task hello(type: wyk.HelloWorldTask1)
+
+task hello1(type: wyk.HelloWorldTask1){
+
+	message = 'I am ly'
+}

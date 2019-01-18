@@ -1,0 +1,20 @@
+task hello7 << {
+	description = "this is hello7"
+	println description
+}
+
+task hello8 << {
+	println description
+}
+//闭包
+hello8{
+	description = "this is hello8_1"
+}
+
+task hello9 << {
+	println description
+}
+
+hello9.configure{
+	description = 'this is hello9!'
+}

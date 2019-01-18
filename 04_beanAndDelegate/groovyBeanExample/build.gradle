@@ -1,0 +1,12 @@
+class GroovyBeanExample{
+
+	private String name
+}
+
+task groovyTest << {
+	def bean = new GroovyBeanExample()
+	bean.name = 'this is name'
+	println bean.name
+	bean.name = 'this is groovyTest'
+	println bean.name
+}
