@@ -91,4 +91,4 @@ Groovy语言中的两个概念:
 
 
 
->借鉴文章：http://www.cnblogs.com/davenkin/p/gradle-learning-10.html
+>借鉴系列文章：http://www.cnblogs.com/davenkin/p/gradle-learning-10.html
